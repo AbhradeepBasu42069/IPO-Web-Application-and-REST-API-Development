@@ -1,0 +1,55 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    border-bottom: 1px solid #ddd;
+}
+
+nav .relative .group-hover {
+    display: none;
+}
+
+nav .group:hover .group-hover {
+    display: block;
+}
+
+input[type="text"] {
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1, h3 {
+    line-height: 1.25;
+}
+
+.bg-blue-100 {
+    background-color: #cfe8fc; /* Adjust for a light blue tone */
+}
+
+.bg-green-500 {
+    background-color: #28a745;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+p, a, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.early-access, .flex.items-center.bg-white.shadow-md.rounded-md.p-2 {
+    padding: 8px;
+    max-width: 300px; /* Sets a smaller width for the entire section */
+    /*font simplifying placeholder gray-mk  less contrastful!*/
+}
