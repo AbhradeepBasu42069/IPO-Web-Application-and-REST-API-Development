@@ -79,8 +79,12 @@ WSGI_APPLICATION = 'Bluestock_Backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'Bluestock_db',
+        'USER': 'postgres',  # Replace with your PostgreSQL username
+        'PASSWORD': 'damini@7704',  # Replace with your PostgreSQL password
+        'HOST': 'localhost',  # Use '127.0.0.1' if needed
+        'PORT': '5432',
     }
 }
 
