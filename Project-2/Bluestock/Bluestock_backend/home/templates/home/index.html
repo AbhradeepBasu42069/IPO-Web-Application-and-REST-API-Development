@@ -1,0 +1,202 @@
+{% extends "home/layout.html"%}
+
+
+{%block footer%}
+<div class="container mt-5">
+    <div class="section-title">
+        <h2 class="text-center mb-4">About IPOs</h2>
+        <div class="divider"><span></span></div>
+    </div>
+    <p class="text-center mb-5">An Initial Public Offering (IPO) is the first sale of a company's shares to the public. This process allows businesses to raise capital by issuing shares to investors. IPOs can be a great opportunity for early investment in growing companies.</p>
+    
+    <div class="row mb-5" >
+        <div class="col-md-4 mb-4" >
+            <a style="text-decoration: none; color: #000;" href="market-analysis.html">
+            <div class="feature-card text-center" >
+                <div class="icon-box" >
+                    
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Market Analysis</h3>
+                <p>In-depth analysis of IPO performance and market trends to guide your investment decisions.</p>
+            </div>
+        </a>
+        </div>
+        <div class="col-md-4 mb-4">
+            <a style="text-decoration: none; color: #000;" href="ipo-alerts.html">
+            <div class="feature-card text-center">
+                <div class="icon-box">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <h3>IPO Alerts</h3>
+                <p>Get timely notifications about upcoming IPOs and their subscription details.</p>
+            </div>
+        </a>
+        </div>
+        <div class="col-md-4 mb-4">
+            <a style="text-decoration: none; color: #000;" href="community-insights.html">
+            <div class="feature-card text-center">
+                <div class="icon-box">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Community Insights</h3>
+                <p>Join our community of investors to share insights and learn from experienced participants.</p>
+            </div>
+        </a>
+        </div>
+    </div>
+    
+    <div class="section-title">
+        <h3 class="text-center mb-4">Upcoming IPOs</h3>
+        <div class="divider"><span></span></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-status bg-primary"></div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h5 class="card-title">{{obj.company_name}}</h5>
+                        <span class="badge bg-primary">Tech</span>
+                    </div>
+                    <p class="card-text"><strong>Issue Size:</strong> ₹500 Crores</p>
+                    <p class="card-text"><strong>Price Band:</strong> {{obj.price_band}}</p>
+                    <p class="card-text"><strong>Listing Date:</strong> 15/06/2025</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="progress w-50">
+                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="small text-muted">Opens in 10 days</span>
+                    </div>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <a href="#" class="btn btn-primary w-100">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-status bg-success"></div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h5 class="card-title">ABC Fintech</h5>
+                        <span class="badge bg-success">Fintech</span>
+                    </div>
+                    <p class="card-text"><strong>Issue Size:</strong> ₹750 Crores</p>
+                    <p class="card-text"><strong>Price Band:</strong> ₹1,200 - ₹1,250</p>
+                    <p class="card-text"><strong>Listing Date:</strong> 20/06/2025</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="progress w-50">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="small text-muted">Opens in 15 days</span>
+                    </div>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <a href="#" class="btn btn-primary w-100">View Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-status bg-info"></div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h5 class="card-title">PQR Tech</h5>
+                        <span class="badge bg-info">Software</span>
+                    </div>
+                    <p class="card-text"><strong>Issue Size:</strong> ₹620 Crores</p>
+                    <p class="card-text"><strong>Price Band:</strong> ₹450 - ₹480</p>
+                    <p class="card-text"><strong>Listing Date:</strong> 25/06/2025</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="progress w-50">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="small text-muted">Opens in 20 days</span>
+                    </div>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <a href="#" class="btn btn-primary w-100">View Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-4">
+        <a href="upcoming-ipo.html" class="btn btn-outline-primary">View All Upcoming IPOs</a>
+    </div>
+</div>
+
+<section class="faq-section py-5 mt-5 bg-light">
+    <div class="container">
+        <div class="section-title">
+            <h3 class="text-center mb-4">Frequently Asked Questions</h3>
+            <div class="divider"><span></span></div>
+        </div>
+        <div class="accordion" id="accordionFAQ">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        How to Subscribe to an IPO?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Step 1: Login to your respective service provider.</li>
+                            <li>Step 2: Click on the IPO button.</li>
+                            <li>Step 3: Select the IPO to bid and enter the relevant details.</li>
+                            <li>Step 4: Your subscription will be completed once you make the payment or give permission.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        Should I buy an IPO first day?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        <p>Whether to buy an IPO on the first day depends on your investment goals and risk appetite. Some investors prefer to wait and observe the initial market reaction. Our platform provides analysis to help you make informed decisions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                        How do you know if an IPO is good?
+                    </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        <p>Evaluate factors like the company's financial health, business model, management team, growth prospects, and industry positioning. Our platform provides detailed analysis and rating for each IPO to help with your assessment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="faq.html" class="btn btn-outline-primary">View All FAQs</a>
+        </div>
+    </div>
+</section>
+{% if user.is_authenticated %}
+
+
+{% else %}
+<section class="cta-section py-5 mt-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h3>Ready to start your investment journey?</h3>
+                <p class="lead mb-0">Create your account today and get access to exclusive IPO insights and tools.</p>
+            </div>
+            <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                <a href="signup-page.html" class="btn btn-primary btn-lg">Sign Up Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+{%endif%}
+{%endblock%}
+
